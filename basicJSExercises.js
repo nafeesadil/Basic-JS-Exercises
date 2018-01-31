@@ -11,35 +11,45 @@ Output:
  --------------------------- */
 
 function percentage(number, percentage) {
-  return "No code yet";
+  
+    var num=number;
+    var per = percentage;
+    var result = (per/100)*num;
+
+
+  return result;
+
+
 }
 console.log("Percentage Calculator:");
-/* Uncomment the following to check */
-  // console.log(percentage(2000, 37.12));
-  // console.log(percentage(450, 56.5));
-  // console.log(percentage(5230, 34));
+ //Uncomment the following to check 
+   console.log(percentage(2000, 37.12));
+   console.log(percentage(450, 56.5));
+  console.log(percentage(5230, 34));
 
 
-/* ---------------------------
-*** #2 Area of Triangle ***
+ //---------------------------
+//*** #2 Area of Triangle ***
 
-Write a JavaScript function to calculate the area of a triangle given the base and height.
+//Write a JavaScript function to calculate the area of a triangle given the base and height.
 
-Test:
-console.log(areaTriangle(5, 20));
+//Test:
+//console.log(areaTriangle(5, 20));
 
-Output:
-50
- --------------------------- */
+//Output:
+//50
+ //--------------------------- */
 
  function areaTriangle(base, height) {
-   return "No code yet";
+   //return "No code yet";
+   var z = .5*base*height;
+   return z;
  }
  console.log("Triangle Area Calculator:");
  /* Uncomment the following to check */
-   // console.log(areaTriangle(2, 7));
-   // console.log(areaTriangle(20, 56.5));
-   // console.log(areaTriangle(50, 34));
+    console.log(areaTriangle(2, 7));
+    console.log(areaTriangle(20, 56.5));
+    console.log(areaTriangle(50, 34));
 
 
 /* ---------------------------
@@ -62,12 +72,22 @@ HINT: Use substring()
 
 function rotate_string(text) {
   console.log(text);
+    var string = text;
+    for(var x =0;x>=string.length;x++)
+    { for (var y=string.length;y<=0;y--)
+      {
+        var temp=string[y];
+        string[y] = 
+      }
+
+    }
+
 }
 
 console.log("Rotate String:");
 /* Uncomment the following to check */
-  //rotate_string("cat");
-  //rotate_string("pseudonym")
+  rotate_string("cat");
+  rotate_string("pseudonym")
 
 
 /* ---------------------------
